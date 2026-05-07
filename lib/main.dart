@@ -7,6 +7,7 @@ import 'core/database.dart';
 import 'core/routes.dart';
 import 'core/theme.dart';
 import 'providers/agendamento_provider.dart';
+import 'providers/assistente_provider.dart';
 import 'providers/cliente_provider.dart';
 import 'providers/servico_provider.dart';
 import 'repositories/agendamento_repository.dart';
@@ -43,6 +44,7 @@ void main() async {
           create: (_) =>
               AgendamentoProvider(AgendamentoRepository(db))..carregar(),
         ),
+        ChangeNotifierProvider(create: (_) => AssistenteProvider()),
       ],
       child: const MarliAgendaApp(),
     ),

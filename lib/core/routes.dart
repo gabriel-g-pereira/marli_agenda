@@ -6,6 +6,7 @@ import '../screens/clientes/lista_clientes_screen.dart';
 import '../screens/clientes/novo_cliente_screen.dart';
 import '../screens/clientes/detalhe_cliente_screen.dart';
 import '../screens/servicos/lista_servicos_screen.dart';
+import '../screens/assistente/assistente_screen.dart';
 
 final router = GoRouter(
   initialLocation: '/',
@@ -41,6 +42,10 @@ final router = GoRouter(
     GoRoute(
       path: '/servicos',
       builder: (_, __) => const ListaServicosScreen(),
+    ),
+    GoRoute(
+      path: '/assistente',
+      builder: (_, __) => const AssistenteScreen(),
     ),
   ],
 );
