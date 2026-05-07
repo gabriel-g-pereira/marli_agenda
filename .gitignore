@@ -35,6 +35,9 @@ migrate_working_dir/
 # Dependências geradas — não versionar
 pubspec.lock
 
+# Chave de API — nunca versionar
+lib/core/constants.dart
+
 # Symbolication
 app.*.symbols
 

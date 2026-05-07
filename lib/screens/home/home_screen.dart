@@ -101,6 +101,11 @@ class _HomeScreenState extends State<HomeScreen> {
           tooltip: 'Serviços',
           onPressed: () => context.push('/servicos'),
         ),
+        IconButton(
+          icon: const Icon(Icons.auto_awesome),
+          tooltip: 'Assistente IA',
+          onPressed: () => context.push('/assistente'),
+        ),
       ],
     );
   }
